@@ -1,0 +1,114 @@
+:root {
+  --primary: #1a4d2e;
+  --secondary: #4f6f52;
+  --accent: #f5ebe0;
+  --text: #333;
+  --error: #a30000;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--accent);
+  color: var(--text);
+}
+
+.navbar {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1558905734-b830f3637e8c?auto=format&fit=crop&q=80&w=1200') center/cover;
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1.5rem;
+}
+
+.testimonial {
+  border-left: 4px solid var(--error);
+  padding: 1rem;
+  font-style: italic;
+  background: #fff5f5;
+  margin-bottom: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--primary);
+  color: white;
+  margin-top: 4rem;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  opacity: 0.7;
+}
+
+.attribution a {
+  color: white;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+}
+
+.hero h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.person-card {
+  text-align: center;
+}
+
+.person-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
